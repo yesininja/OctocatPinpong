@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<head>
+	
+	<link rel="stylesheet" href="css/bootstrap.css" 
+    media="screen" />
+		 <script src="js/bootstrap.js"></script>
+	<script src="js/jquery.js"></script>	
+	<script src="js/pingpong.js"></script>
+	<style>
+		#playground{
+			background: #e0ffe0 url(images/bg2.png);
+			width: 400px;
+			height: 200px;
+			position: relative;
+			overflow: hidden;
+		}
+		#ball {
+			background: #ffffff;
+			position: absolute;
+			width: 20px;
+			height: 20px;
+			left: 150px;
+			top: 100px;
+			border-radius: 10px;
+		}
+		.paddle {
+			background:  url(images/222.png);
+			left: 20px;
+			top: 60px;
+			position: absolute;
+			width: 57px;
+			height: 90px;
+			
+		}
+		#paddleB {
+			background:  url(images/111.png);
+			left: 320px;
+			
+		}	
+	</style>	
+</head>
+<body>
+	<form class="well">
+		
+		</form>
+	<div id="game">
+		<div id="scoreboard">
+			<div class="score">Jugador A : <span id="scoreA">0</span></div>
+			<div class="score">Jugador B : <span id="scoreB">0</span></div>
+		</div>
+		<div id="playground">
+			<div id="paddleA" class="paddle"></div>
+			<div id="paddleB" class="paddle"></div>
+			<div id="ball"></div>
+		</div>
+		<div id="spectators"></div>
+	</div>
+	<footer>
+		<h5>Usa las teclas "w" y "s" para jugador A. "arriba" y "abajo" para jugador B</h5>
+	</footer>
+	<script src="js/bootstrap.js"></script>
+	<script src="js/jquery.js"></script>	
+	<script src="js/pingpong.js"></script>
+
+	
+</body>
+</html>
